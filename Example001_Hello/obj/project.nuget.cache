@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cRZ8p2JgQRmzdCUW0atN3PsQP+0Ja2cnV1NPSCHdkgx3lkq9HDQ4/opUXqrmbcqhXex4DcmEDMUJL4yuFZHT2Q==",
+  "dgSpecHash": "5VYTCYRB64NkDLiR29NN2Br90lxjC9SetFbMxY+BTxdQFcH2+6IJbd09krEOXuZfoqyhzz4BokYuIWiw/VYZQg==",
   "success": true,
-  "projectFilePath": "C:\\Git\\Examples\\Example001_Hello\\Example001_Hello.csproj",
+  "projectFilePath": "c:\\Git\\Examples\\Example001_Hello\\Example001_Hello.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
