@@ -1,6 +1,9 @@
-﻿// Задача 53: Задайте двумерный массив. Напишите программу, которая поменяет местами первую и последнюю строку массива.
+﻿
 
-int[,] array = new int [5,5];
+// int[,] array = new int [5,5];
+
+Print(array);
+Console.WriteLine();
 
 for (int i = 0; i < array.GetLength(0); i++)
 {

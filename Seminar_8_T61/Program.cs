@@ -1,12 +1,16 @@
 ﻿/* Задача 61: Вывести первые N строк треугольника Паскаля. 
 Сделать вывод в виде равнобедренного Треугольника */
 
-int row = 6;
-int[ , ] triangle = new int[row,row];
-const int cellWitgh = 1;
+Console.Write("Input rows number: ");
+int row = int.Parse(Console.ReadLine());
+
+
+int[,] triangle = new int[row,row];
+const int cellWitgh = 2;
 
 void FillTriangle()
 {
+    
     for (int i = 0; i < row; i++)
     {
         triangle[i, 0] = 1;
@@ -22,7 +26,7 @@ void FillTriangle()
     }
 }
 
-void PrintTriangle()
+void printTriangle()
 {
     for (int i = 0; i < row; i++)
     {
@@ -43,8 +47,8 @@ void Magic()
         for (int j = 0; j <= i; j++)
         {
             Console.SetCursorPosition(col, i + 1);
-            if (triangle[i, j] != 0) Console.Write($"{triangle[i, j],cellWitgh}");
-            if (triangle[i, j] % 2 != 0) Console.WriteLine("*");
+            if (triangle[i, j] % 2 != 0) Console.Write($"{triangle[i, j],cellWitgh}");
+            //if (triangle[i, j] != 0) Console.WriteLine("*");
             col += cellWitgh * 2;
         }
         
@@ -53,8 +57,9 @@ void Magic()
     }
 }
 
-Console.ReadLine();
+Console.WriteLine();
+
 FillTriangle();
-// PrintTriangle();
-Console.ReadLine();
+//printTriangle();
+//Console.ReadLine();
 Magic();
