@@ -5,10 +5,21 @@ Console.Write("Input rows number: ");
 int row = int.Parse(Console.ReadLine());
 
 int[,] triangle = new int[row,row];
-const int cellWitgh = 3;
+const int cellWitgh = 2;
+
 
 double[,] pascalTriangle = new double[row + 1, 2 * row + 1];
 FillPascalTriangle(pascalTriangle);
+
+Console.WriteLine();
+WriteArray(pascalTriangle);
+
+TransformationPascalTriangle(pascalTriangle);
+
+Console.WriteLine();
+WriteArray(pascalTriangle);
+
+
 
 void FillPascalTriangle(double[,] pascalTriangle)
 {
@@ -25,14 +36,7 @@ void FillPascalTriangle(double[,] pascalTriangle)
     }
 }
 
-Console.WriteLine();
-WriteArray(pascalTriangle);
 
-
-TransformationPascalTriangle(pascalTriangle);
-
-Console.WriteLine();
-WriteArray(pascalTriangle);
 
 void TransformationPascalTriangle(double[,] array)
 {

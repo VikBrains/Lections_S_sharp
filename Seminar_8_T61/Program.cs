@@ -4,9 +4,16 @@
 Console.Write("Input rows number: ");
 int row = int.Parse(Console.ReadLine());
 
-
 int[,] triangle = new int[row,row];
 const int cellWitgh = 2;
+
+
+Console.WriteLine();
+FillTriangle();
+
+printTriangle();
+//Console.ReadLine();
+Magic();
 
 void FillTriangle()
 {
@@ -26,18 +33,6 @@ void FillTriangle()
     }
 }
 
-void printTriangle()
-{
-    for (int i = 0; i < row; i++)
-    {
-        for (int j = 0; j < row; j++)
-        {
-            if (triangle[i, j] != 0)
-                Console.Write($"{triangle[i, j], cellWitgh}");
-        }
-        Console.WriteLine();
-    }
-}
 
 void Magic()
 {
@@ -57,9 +52,20 @@ void Magic()
     }
 }
 
-Console.WriteLine();
 
-FillTriangle();
-//printTriangle();
-//Console.ReadLine();
-Magic();
+
+void printTriangle()
+{
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < row; j++)
+        {
+            if (triangle[i, j] != 0)
+            {
+                Console.Write($"{triangle[i, j], cellWitgh}");
+            }
+
+        }
+        Console.WriteLine();
+    }
+}
